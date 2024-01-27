@@ -1,0 +1,42 @@
+* {
+    max-width: 1000px;
+}
+
+h1 {
+    padding: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    text-align: center;
+    background-color: lightyellow;
+    color: black; 
+}
+footer {
+    padding: 15px 0px;
+    
+}
+.contract {
+    font-family: monospace;
+}
+img{
+    width: 50%;
+    align-content: center;
+}
+a {
+ color:brown;
+}
+a:hover {
+ color: darkblue;
+}
+p{
+    font-family: monospace; 
+}
+.intro {
+   text-align: left; 
+   font-size: large;
+   font-weight: 100;
+   
+}
+figcaption {
+    font-size: small;
+}
