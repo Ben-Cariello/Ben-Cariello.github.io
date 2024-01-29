@@ -1,22 +1,21 @@
 
 h1 {
-    padding: auto;
+    padding: 5px;
     font-family: 'Courier New', Courier, monospace;
 }
 body {
-    text-align: center;
     background-color: lightyellow;
     color: black; 
+    text-align: center;
 }
 footer {
     padding: 15px 0px;
-    
 }
 .contract {
     font-family: monospace;
 }
 img{
-    width: 50%;
+    width: 40%;
     align-content: center;
 }
 a {
@@ -42,7 +41,6 @@ figcaption {
 }
 ol {
     text-align: left;
-    padding: auto;
 }
 table {
     text-align: center;
@@ -54,4 +52,7 @@ fieldset {
 }
 legend {
     font-weight:bold;
+}
+button {
+
 }

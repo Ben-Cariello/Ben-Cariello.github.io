@@ -60,17 +60,11 @@
             </label>
         </div>
         <div>
-            <label for="referrer">How did you hear about us?
-                <select id="referrer" name="referrer">
-                  <option value="">(select one)</option>
-                  <option value="1">Family or Friend</option>
-                  <option value="2">Career Fair</option>
-                  <option value="3">Commerical</option>
-                  <option value="4">Other</option>
-                </select>
-              </label>
-
+            <label for="undergrad">
+                None:<input type="radio" id="none" name="degree" >
+            </label>
         </div>
+        
     </fieldset>
     <legend>Employement Interests</legend>
     <fieldset class="jobInterest">
@@ -91,6 +85,29 @@
             </label>
         </div>
     </fieldset>
+    <legend>Additional Comments</legend>
+    <fieldset>
+        <div>
+            <label for="referrer">How did you hear about us?
+                <select id="referrer" name="referrer">
+                  <option value="">(select one)</option>
+                  <option value="1">Family or Friend</option>
+                  <option value="2">Career Fair</option>
+                  <option value="3">Commerical</option>
+                  <option value="4">Other</option>
+                </select>
+              </label>
+
+        </div>
+        <div>
+            <label>Additional Comments:
+            <textarea class="comment">
+            </textarea>
+        </label>
+        </div>
+    </fieldset>
+    <button class="button"type="submit" id="submit">Submit</button>
+    <button class="button" type="reset" id="reset">Reset</button>
     </form>
    </main>
    <footer>
