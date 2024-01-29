@@ -16,6 +16,7 @@ footer {
 }
 img{
     width: 40%;
+    max-width: 10cm;
     align-content: center;
 }
 a {
