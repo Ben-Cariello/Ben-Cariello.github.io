@@ -8,7 +8,7 @@
 </head>
 <body>
    <header>
-    <h1>Benjamin Cariello's Blitzing Cardinal || ITIS3135 ||Form</h1>
+    <h1>Benjamin Cariello's Blitzing Cardinal || ITIS3135 || Form</h1>
     <nav>
         <a href = "./">Home</a>
         ||
@@ -22,7 +22,76 @@
     </nav>
    </header> 
    <main>
-    <p>Welcome to my 3135 Course Page</p>
+    <h2>Employement Interest</h2>
+    <form action="#">
+        <legend>Personal Information</legend>
+    <fieldset class="basicInfo">
+        <div class="basicInfo">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="basicInfo">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required placeholder="(999) 999-9999">
+        </div>
+        <div class="basicInfo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="John123@gmail.com">
+        </div>
+        <div>
+            <label>
+                Degree:
+            </label>
+        </div>
+        <div>
+            <label for="undergrad">
+                Undergradate:<input type="radio" id="undergrad" name="degree" checked>
+            </label>
+            <label for="undergrad">
+                Bachelors:<input type="radio" id="bachelors" name="degree">
+            </label>
+        </div>
+        <div>
+            <label for="undergrad">
+                Masters:<input type="radio" id="masters" name="degree">
+            </label>
+            <label for="undergrad">
+                PHD:<input type="radio" id="phd" name="degree" >
+            </label>
+        </div>
+        <div>
+            <label for="referrer">How did you hear about us?
+                <select id="referrer" name="referrer">
+                  <option value="">(select one)</option>
+                  <option value="1">Family or Friend</option>
+                  <option value="2">Career Fair</option>
+                  <option value="3">Commerical</option>
+                  <option value="4">Other</option>
+                </select>
+              </label>
+
+        </div>
+    </fieldset>
+    <legend>Employement Interests</legend>
+    <fieldset class="jobInterest">
+        <label>What positions are you interested in: </label>
+        <div>
+            <label for="marketing">
+            Marketing: <input type="checkbox" name="marketing" id="marketing" class="jobinterest">
+            </label>
+        </div>
+        <div>
+            <label for="HR">
+            Human Resources: <input type="checkbox" name="HR" id="HR" class="jobinterest">
+            </label>
+        </div>
+        <div>
+            <label for="intern">
+            Internships: <input type="checkbox" name="intern" id="intern" class="jobinterest">
+            </label>
+        </div>
+    </fieldset>
+    </form>
    </main>
    <footer>
     <nav>
