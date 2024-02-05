@@ -45,7 +45,6 @@ ol {
 }
 table {
     text-align: center;
-    padding: auto;
 }
 fieldset {
     text-align: center;
@@ -54,6 +53,4 @@ fieldset {
 legend {
     font-weight:bold;
 }
-button {
 
-}
