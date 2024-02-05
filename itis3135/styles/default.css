@@ -4,8 +4,8 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 body {
-    background-color: lightyellow;
-    color: black; 
+    background-color: #483a58;
+    color: #EFBDEB; 
     text-align: center;
 }
 footer {
@@ -20,10 +20,10 @@ img{
     align-content: center;
 }
 a {
- color:brown;
+ color:#517664;
 }
 a:hover {
- color: darkblue;
+ color: #EFBDEB;
 }
 p{
     font-family: monospace; 
@@ -41,10 +41,7 @@ figcaption {
     font-style:italic;
 }
 ol {
-    text-align: left;
-}
-table {
-    text-align: center;
+    align-self: center;
 }
 fieldset {
     text-align: center;
@@ -53,4 +50,26 @@ fieldset {
 legend {
     font-weight:bold;
 }
-
+table, th, td {
+    border-collapse:  collapse;
+    border-spacing: 5px;
+    position: relative;
+    margin: auto;
+    border: 2px solid black;
+}
+form {
+    text-align: center;
+    background-color: #56203d;
+    color: #EFBDEB;
+    align-content: center;
+}
+.comment {
+    width: 150px;
+    height: 25px; 
+    margin-top: 10px;
+    
+}
+button {
+    background-color: #483a58;
+    color: #EFBDEB;
+}

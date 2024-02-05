@@ -47,20 +47,20 @@
             <label for="undergrad">
                 Undergradate:<input type="radio" id="undergrad" name="degree" checked>
             </label>
-            <label for="undergrad">
+            <label for="bachelors">
                 Bachelors:<input type="radio" id="bachelors" name="degree">
             </label>
         </div>
         <div>
-            <label for="undergrad">
+            <label for="masters">
                 Masters:<input type="radio" id="masters" name="degree">
             </label>
-            <label for="undergrad">
+            <label for="phd">
                 PHD:<input type="radio" id="phd" name="degree" >
             </label>
         </div>
         <div>
-            <label for="undergrad">
+            <label for="none">
                 None:<input type="radio" id="none" name="degree" >
             </label>
         </div>
@@ -89,7 +89,7 @@
     <fieldset>
         <div>
             <label for="referrer">How did you hear about us?
-                <select id="referrer" name="referrer">
+                <select id="referrer" name="referrer" required>
                   <option value="">(select one)</option>
                   <option value="1">Family or Friend</option>
                   <option value="2">Career Fair</option>
@@ -100,8 +100,8 @@
 
         </div>
         <div>
-            <label>Additional Comments:
-            <textarea class="comment">
+            <label for="comment">Additional Comments:
+            <textarea  id="comment" class="comment">
             </textarea>
         </label>
         </div>

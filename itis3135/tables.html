@@ -23,7 +23,7 @@
    </header> 
    <main>
     <h3>My Tabular Data</h3>
-    <ol class = "table">
+    <ol class = "simpleTable">
         <li>Benjamin Cariello BJCariello@carielloinc.com 15</li>
         <li>Happy Cariello HJCariello@carielloinc.com 12</li>
         <li>Millie Cariello MACariello@carielloinc.com 2</li>
@@ -34,92 +34,116 @@
     </ol>
     <h3>Employee Data in Simple Table</h3>
     <table>
-        <tr>
-        <th scope="col">Employee:</th> 
-        <th scope="col">Email:</th> 
-        <th scope="col">Years with Company</th>
-        </tr>
         <tbody>
             <tr>
-                <td>Benjamin Cariello</td><td>BJCariello@carielloinc.com</td><td>15</td>
-            </tr><tr>
-                <td>Happy Cariello</td><td>HJCariello@carielloinc.com</td><td>12</td>
-            </tr><tr>
-                <td>Millie Cariello</td><td>MACariello@carielloinc.com</td><td>2</td>
-            </tr><tr>
-                <td>Ananya Lokesh</td><td>ALokesh@carielloinc.com</td><td>1</td>
-            </tr><tr>
-                <td>Zuko</td><td>firelordZuko@carielloinc.com</td><td>12</td>
-            </tr><tr>
-                <td>Joey Bissette</td><td>JEBissette@carielloinc.com</td><td>4</td>
-            </tr><tr>
-                <td>Chase Sardeson</td><td>ChaseSardeson@carielloinc.com</td><td>6</td>
-            </tr> 
-    </table>
-
-
-    <h3>Employee Data in Complex Table</h3>
-<figure>
-    <figurecaption>Employee Data</figurecaption>
-    <table>
-        <thead>
-        <tr>
-        <th >Role:</th>
-        <th >Employee:</th> 
-        <th >Email:</th> 
-        <th >Years with Company:</th>
-        <th>Salary:</th>
-        </tr>
-        </thead>
-        <tbody>
-        <th colspan = "3">CEO:</th>
-        <colgroup>
-            <tr> 
+                <th><b>Name</b></th>
+                <th><b>Email</b></th>
+                <th><b>Years of Service</b></th>
+            </tr>
+            <tr>
                 <td>Benjamin Cariello</td>
                 <td>BJCariello@carielloinc.com</td>
                 <td>15</td>
-                <td>$5500</td>
-            </tr><tr>
+            </tr>
+            <tr>
                 <td>Happy Cariello</td>
                 <td>HJCariello@carielloinc.com</td>
                 <td>12</td>
-                <td>$5000</td>
-            </tr><tr>
+            </tr>
+            <tr>
                 <td>Millie Cariello</td>
                 <td>MACariello@carielloinc.com</td>
                 <td>2</td>
-                <td>$4000</td>
             </tr>
-        </colgroup>
-        <th rowspan = "2">Marketing:</th>
-        <colgroup>
-             <tr>
+            <tr>
                 <td>Ananya Lokesh</td>
                 <td>ALokesh@carielloinc.com</td>
                 <td>1</td>
-                <td>$2500</td>
-            </tr><tr>
+            </tr>
+            <tr>
                 <td>Zuko</td>
                 <td>firelordZuko@carielloinc.com</td>
                 <td>12</td>
-                <td>$2500</td>
             </tr>
-        </colgroup>
-        <th rowspan = "2">Interns:</th>
-        <colgroup>
             <tr>
                 <td>Joey Bissette</td>
                 <td>JEBissette@carielloinc.com</td>
                 <td>4</td>
-                <td>Unpaid</td>
-            </tr><tr>
+            </tr>
+            <tr>
                 <td>Chase Sardeson</td>
                 <td>ChaseSardeson@carielloinc.com</td>
                 <td>6</td>
-                <td>Unpaid</td>
-            </tr> 
-        </colgroup>
+            </tr>
+        </tbody>
     </table>
+
+
+    <h3>Employee Data in Complex Table</h3>
+    <figure>
+    <table class="complexTable">
+        <tbody>
+            <tr>
+                <th><b>Category</b></th>
+                <th><b>Name</b></th>
+                <th><b>Email</b></th>
+                <th><b>Years of Service</b></th>
+                <th><b>Monthly Salary</b></th>
+            </tr>
+            <tr>
+                <td>CEO</td>
+                <td>Benjamin Cariello</td>
+                <td>BJCariello@carielloinc.com</td>
+                <td>15</td>
+                <td>$200,000</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Marketing</td>
+                <td>Happy Cariello</td>
+                <td>HJCariello@carielloinc.com</td>
+                <td>12</td>
+                <td>$75,000</td>
+            </tr>
+            <tr>
+                <td>Millie Cariello</td>
+                <td>MACariello@carielloinc.com</td>
+                <td>2</td>
+                <td>$70,000</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Customer Service</td>
+                <td>Ananya Lokesh</td>
+                <td>ALokesh@carielloinc.com</td>
+                <td>1</td>
+                <td>$60,000</td>
+            </tr>
+            <tr>
+                <td>Zuko</td>
+                <td>firelordZuko@carielloinc.com</td>
+                <td>12</td>
+                <td>$55,000</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Interns</td>
+                <td>Joey Bissette</td>
+                <td>JEBissette@carielloinc.com</td>
+                <td>4</td>
+                <td>College Credit</td>
+            </tr>
+            <tr>
+                <td>Chase Sardeson</td>
+                <td>ChaseSardeson@carielloinc.com</td>
+                <td>6</td>
+                <td>College Credit</td>
+            </tr>
+            <tr>
+                <th colspan="3">Total Years of Service</th>
+                <td>52</td>
+                <td>$460,000</td>
+            </tr>
+        </tbody>
+    </table>
+    <figcaption>Employee Information</figcaption>
 </figure>
 
 
