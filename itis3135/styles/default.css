@@ -56,6 +56,7 @@ table, th, td {
     position: relative;
     margin: auto;
     border: 2px solid black;
+    padding: 10px; 
 }
 form {
     text-align: center;
@@ -72,4 +73,13 @@ form {
 button {
     background-color: #483a58;
     color: #EFBDEB;
+}
+.complexTable tr:nth-child(even){
+    background-color: #94A187;
+}
+.complexTable tr:nth-child(odd){
+    background-color: #C7D3BF;
+}  
+.complexTable {
+    color: black;
 }
