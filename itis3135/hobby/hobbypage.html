@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang = "en"></html>
+
+<head>
+    <meta chatset = "UTF-8">
+    <meta name="viewport" content = "window=device-width, initial-scale=1.0">
+    <title>
+        Hiking
+    </title>
+    <style>
+        * {
+            background-color: #9E8FB2;
+            color: #FFFCE8;
+        }
+        .when {
+            display: none;
+        }
+        .why {
+            display: none;
+        }
+        .where {
+            display: none;
+        }
+        .how {
+            display: none;
+        }
+        .who {
+            display: none;
+        }
+        .NavButton {
+            width: 500px;
+            height: 45px;
+            border: 1px solid black;
+        }
+        section {
+            border: 1px solid black;
+            margin: 5px;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hiking</h1>
+    </header>
+    <main>
+        <div class = "Nav">
+            <button class = "NavButton" id = "whatButton">Home</button>
+            <button class = "NavButton" id = "whoButton">About</button>
+            <button class = "NavButton" id = "whereButton">Location</button>
+            <button class = "NavButton" id = "whenButton">When</button>
+            <button class = "NavButton" id = "whyButton">Why</button>
+            <button class = "NavButton" id = "howButton">How</button>
+        </div>
+            <section class = "what" id = "what">
+                <h2>Home</h2>
+                <p>
+                    Ever since I was a kid I had always loved the mountains. My family would vist almost yearly due to soccer tournaments taking us up there. 
+                    While I loved playing soccer my favorite part of those trips was always hiking the different trails across the Blue Ridge Parkway. Once all of our games had 
+                    concluded for the day, we would drive down Blue Ridge Parkway searching for different trails to hike. 
+
+                </p>
+                <figure>
+                    <img src = "./images/AIWhat.png" alt = "AI image">
+                    <figcaption>Beautiful View of the Blue Ridge</figcaption>
+                    <p><i>Blue Ridge Mountains</i></p>
+                </figure>
+                <p>This was the beginning of my love for hiking. While my family would slowly stop hiking, I would continue and eventually
+                    gather a group of friends to join me. While our college schdules have caused it to be much harder to plan trips
+                    together, we still make sure to take a trip once a year up to the Blue Ridge Mountains.
+                </p>
+                
+            </section>
+            <section class = "who" id = "who">
+                <h2>About</h2>
+                <p>
+                    My name is Ben, I grew up in Cary, NC. Through out highschool, I made many friends who shared a love for hiking and photography. While we started small just walking short local trails,
+                    we would soon plan a trip up to the Blue Ridge Mountains for our spring break. This would become our yearly tradition. Following graduation multiple of us went off to different colleges
+                    while others started working. Despite the distance, we still meet up once a year for a trip to the mountains. Some years we just walk shorter trails and explore the different mountain towns, 
+                    while other years we plan for specific day long trails. 
+                </p>
+                <img src = "./images/groupPhoto1.png" alt = "Group Photo by Crabtree falls" width = "400px" height = "max">
+                <figure>
+                    <img src = "./images/AIWho.png" alt = "AI image">
+                    <figcaption>Trailhead</figcaption>
+                    <p><i>Mountain Trailhead</i></p>
+                </figure>
+            </section>
+            <section class = "when" id = "when">
+                <h2>When placeholder</h2>
+            </section>
+            <section class = "where" id = "where">
+                <h2>Blue Ridge Mountains</h2>
+                <p></p>
+                <iframe src = "https://www.google.com/maps/place/Blowing+Rock,+NC/@36.1214549,-81.6843336,12z/data=!4m6!3m5!1s0x8850e550ea77a3b9:0x95376337d13c1fa9!8m2!3d36.135129!4d-81.6776059!16zL20vMDEzaHNu?entry=tts"></iframe>
+                
+            </section>
+            <section class = "why" id = "why">
+                <h2>Why placeholder</h2>
+            </section>
+            <section class = "how" id = "how">
+                <h2>how placeholder</h2>
+            </section>
+
+
+
+
+
+    </main>
+    <footer>
+        <p>Page Built by <a href = "CarielloInc.com/index.html">Cariello Inc.</a>&copy; 2024</p>
+    <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+        <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+       </a>
+       <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+         </a>
+         <a href = "https://wave.webaim.org/report#/https://webpages.charlotte.edu/UNCCID/itis3135/hobbypage" id = "validation_link_accessibility">
+            <img style="border:0;width:88px;height:31px" src="./images/button_validation_wcag.png" alt="Valid accessibility!">
+         </a>
+         <script>
+            document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+                 document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+                 //document.getElementById("validation_link_accessibility").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+         </script>
+         
+    </footer>
+    <script src="./script.js"></script>
+</body>
