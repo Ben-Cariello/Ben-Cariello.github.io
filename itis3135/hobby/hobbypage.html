@@ -1,30 +1,16 @@
 <!DOCTYPE html>
-<html lang = "en"></html>
-
+<html lang = "en">
 <head>
-    <meta chatset = "UTF-8">
-    <meta name="viewport" content = "window=device-width, initial-scale=1.0">
-    <title>
-        Hiking
-    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking</title>
     <style>
         * {
             background-color: #9E8FB2;
             color: #FFFCE8;
+            align-content: center;
         }
-        .when {
-            display: none;
-        }
-        .why {
-            display: none;
-        }
-        .where {
-            display: none;
-        }
-        .how {
-            display: none;
-        }
-        .who {
+        .when, .who, .where, .why, .how {
             display: none;
         }
         .NavButton {
@@ -50,9 +36,9 @@
             <button class = "NavButton" id = "whatButton">Home</button>
             <button class = "NavButton" id = "whoButton">About</button>
             <button class = "NavButton" id = "whereButton">Location</button>
-            <button class = "NavButton" id = "whenButton">When</button>
+            <button class = "NavButton" id = "whenButton">Favorite Times</button>
             <button class = "NavButton" id = "whyButton">Why</button>
-            <button class = "NavButton" id = "howButton">How</button>
+            <button class = "NavButton" id = "howButton">Gear</button>
         </div>
             <section class = "what" id = "what">
                 <h2>Home</h2>
@@ -62,11 +48,13 @@
                     concluded for the day, we would drive down Blue Ridge Parkway searching for different trails to hike. 
 
                 </p>
-                <figure>
-                    <img src = "./images/AIWhat.png" alt = "AI image">
-                    <figcaption>Beautiful View of the Blue Ridge</figcaption>
+                <div>
+                    <figure>
+                        <img src = "./images/AIWhat.png" alt = "AI image">
+                        <figcaption>Beautiful View of the Blue Ridge</figcaption>
+                    </figure>
                     <p><i>Blue Ridge Mountains</i></p>
-                </figure>
+                </div>
                 <p>This was the beginning of my love for hiking. While my family would slowly stop hiking, I would continue and eventually
                     gather a group of friends to join me. While our college schdules have caused it to be much harder to plan trips
                     together, we still make sure to take a trip once a year up to the Blue Ridge Mountains.
@@ -81,27 +69,96 @@
                     while others started working. Despite the distance, we still meet up once a year for a trip to the mountains. Some years we just walk shorter trails and explore the different mountain towns, 
                     while other years we plan for specific day long trails. 
                 </p>
-                <img src = "./images/groupPhoto1.png" alt = "Group Photo by Crabtree falls" width = "400px" height = "max">
-                <figure>
-                    <img src = "./images/AIWho.png" alt = "AI image">
-                    <figcaption>Trailhead</figcaption>
+                <img src = "./images/groupPhoto1.png" alt = "Group Photo by Crabtree falls" height = "1000" width = "800">
+                <div>
+                    <figure>
+                        <img src = "./images/AIWho.png" alt = "AI image">
+                        <figcaption>Trailhead</figcaption>
+                    </figure>
                     <p><i>Mountain Trailhead</i></p>
-                </figure>
+                </div>
             </section>
             <section class = "when" id = "when">
-                <h2>When placeholder</h2>
+                <h2>Favorite Locations</h2>
+                <img src = "./images/PhotoWhen1.png" width = "350" height = "600">
+                <img src = "./images/PhotoWhen2.png" width = "400" height = "700">
+                <img src = "./images/PhotoWhen3.png" width = "650" height = "800">
+                <div>
+                    <figure>
+                        <img src = "">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
             </section>
             <section class = "where" id = "where">
                 <h2>Blue Ridge Mountains</h2>
-                <p></p>
-                <iframe src = "https://www.google.com/maps/place/Blowing+Rock,+NC/@36.1214549,-81.6843336,12z/data=!4m6!3m5!1s0x8850e550ea77a3b9:0x95376337d13c1fa9!8m2!3d36.135129!4d-81.6776059!16zL20vMDEzaHNu?entry=tts"></iframe>
+                <p>The Blue Ridge is a mountain range that stretches 550 miles from Pennsylvania to Georgia. It was named such due to a bluish haze when viewing the mountains from a distance. These mountains are commonly referred to as one of the most beautiful parts of America, but the Blue Ridge Mountains are not only famous due to its breathtaking views. The Blue Ridge Parkway is the first national rural parkway built, and is over 450 miles long. This is where the mountains gain most of their notoriety. The parkway allows you to travel nearly the entire mountain range stoplight free, while enjoying the scenic views. Along the parkway are hundreds of trails, lookout points, and historical buildings. This is where we predominantly look for our trails. While we have done many of the big trails along the parkway, such as Grandfather mountain, we also like to do the random smaller trails that we find just by driving up or down the parkway.</p>   
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Afje_FN3bMk?si=33Jr2r7H6iohediD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div>
+                    <figure>
+                        <img src="./images/AIWhere.png" alt="AI Photo">
+                     <figcaption>Photo of the Blue Ridge Parkway</figcaption>
+                    </figure>
+                 <p><i>Blue Ridge Parkway</i></p>
+                </div>
+                
                 
             </section>
             <section class = "why" id = "why">
-                <h2>Why placeholder</h2>
+                <h2>Why Hike?</h2>
+                <p>While beautiful views and exploring nature is why I enjoy hiking there are many reasons why you should hike. Hiking can have a massive positive impact on both your physical and mental health. Hiking</p>
+                
             </section>
             <section class = "how" id = "how">
-                <h2>how placeholder</h2>
+                <h2>Gear</h2>
+                <p>The first step to going on a hike is preparing. What you take with you is extremely important. Below is a table compiled of what I like to take on my hikes as well as a link to a quality brand of that item, while not all of it is required it certainly makes the hikes much more manageable.</p>
+                <table class = "gearTable">
+                    <tbody>
+                        <tr>
+                            <th><b>Gear</b></th>
+                            <th><b>Link</b></th>
+                            <th><b>Price</b></th>
+                        </tr>
+                        <tr>
+                            <td>Hiking Boot</td>
+                            <td><a href = "https://www.amazon.com/Timberland-White-Ledge-Waterproof-Brown/dp/B000VX37WO/ref=sr_1_9?crid=8RCJV6SJFFYW&dib=eyJ2IjoiMSJ9.CNjDsylIZJ-nVdeUYzL96TRTe_EPkCj2tK2ZGwkj-BuOLvEb0NG0vADV9X4iRb95chYBQfXuoOwVisizP7T-LHLBB49LxrclF4AWf3g21i3j2JUlyufUVKa_G6JQ6cKy8EdMKyf8EJDVEhzxZO5LFUhSV7tDhebgriZAFwemhgDs4bfFHUdrR-pBaPgta5EFeNc2xFwyWBxJx37eHBKoj44UjyQ4OvTrajQY1NzcLES4fJA_REUsxoFIgOGXrHIgW8LgUskAVOeF23yHED0_GP2P1Jghg40OY1s5iY3wkXg.QE9NsqFKsskjQXpu9Mec1PXQOZWwbUWST5DOFt5d5S8&dib_tag=se&keywords=hiking+boots+mens&qid=1711230530&sprefix=hiking+boots+mens%2Caps%2C90&sr=8-9">Amazon</a></td>
+                            <td>$89.95</td>
+                        </tr>
+                        <tr>
+                            <td>Hiking Pants</td>
+                            <td><a href = "https://www.amazon.com/CQR-Tactical-Resistant-Ripstop-Lightweight/dp/B0C653P9KH/ref=sr_1_11_sspa?crid=1KQ4AVTXULPED&dib=eyJ2IjoiMSJ9.W19HOYolMnoEI4YRRnTxAmRyiNDdot9WnTdoVZyQYBxRBC13hwCxzqDU-w9D7M9glNCgeAK7hLEqwUrFhufcy2gx2EPMCRAdqXksC3fVBBwHbRw2OYSNGO9kDwVJRKWiZHRGpnof17Ipp73DQdIDEVBYsCS9x7rfdhHx3oKr2lDHNHOIcCmzif58QEyxfEwTY9Z8SjE2o8GPyBJEI2MbDSAV_KqdPnxhBhs2Xf4B4VfAyeT7urF-7q6PxHG0qW80pnlEzFHfeBtcBFEZQJyzwTCB3YnHhKkMVbw48WFJjsE.g5tIrU3eBkvco4D13knLxjSxp26lWDMLWMj65QgK7zM&dib_tag=se&keywords=hiking+gear&qid=1711230662&sprefix=hiking+gea%2Caps%2C98&sr=8-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1">Amazon</a></td>
+                            <td>$45.98</td>
+                        </tr>
+                        <tr>
+                            <td>Water Bottle</td>
+                            <td><a href = "https://www.amazon.com/CamelBak-Chute-Bottle-Tritan-Charcoal/dp/B08QTSVJF3/ref=sr_1_5?crid=14G9V0ET9E60N&dib=eyJ2IjoiMSJ9.L3dJWKsadBBl4uZISlvF0b8SJcgi39dpmRTQ4UXg4n2tfjwBthTYkgXcD8EscaIsNLeiEueklb2K5KgZwyUKcWMkWETkn-MyhWw4wwg55s0BJ-M6fjjU1bZYZ9gdNSM9nhKu-8MSwVamSjzrTLlolAZtQ_-BSaHx8nFs8BX25OeLbS6FAsPobWXluQKVUamf7oj7JSh3vWyHDy0XnQEx0FeBbZ8-8xX00HB4CoKkIDCPBvULfQ4-agM_Nrg-A6276OEPSazefqqlx5zE2xPaNpC0Q5ol_o8rbrByhjbK1TE.ZNFjqapdmPC-LRju4ceELGhgeMh3BWPS8k22lMcoHjA&dib_tag=se&keywords=hiking+water+bottle&qid=1711230788&sprefix=hiking+water+bottle%2Caps%2C83&sr=8-5">Amazon</a</td>
+                            <td>$19.00</td>
+                        </tr>
+                        <tr>
+                            <td>Trekking Pole</td>
+                            <td><a href = "https://www.amazon.com/TrailBuddy-Walking-Poles-Collapsible-Lightweight/dp/B01N1L8SKX/ref=sr_1_1_sspa?crid=1VRICHH7MEQ9Q&dib=eyJ2IjoiMSJ9.bX1LY-ZMojkND9PW-A78RAFRC-ehtDDAN0u_2GfxY_lsQwkKUUvoUKP-KX2tAaBiDbUF13GJ4s-td3l6_bW7XG7_gBHPektEWK_vrgKi01jbNd7Utp1plbcbA4kBZb4nxBmrQi2598qCHBElk9wEWIeoEp8r40baFffWgkv0WzvheVv8QJLo4MOxqo4wzvBLucuV1vvMpXp78KvbmEJRfhRZOFFIFAOPluBv6pT2lo4.lMp3AyVjPbAFq_QJ_6dlj3oRb8XhYgoqpFI-tIGuG70&dib_tag=se&keywords=hiking%2Bwalking%2Bstick&qid=1711230873&sprefix=hikinh%2Bwalking%2Bstick%2Caps%2C88&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&smid=A2JSS8JZT2LG97&th=1">Amazon</a</td>
+                            <td>$29.99</td>
+                        </tr>
+                        <tr>
+                            <td>Backpack</td>
+                            <td><a href = "https://www.amazon.com/Waterfly-Crossbody-Backpack-Travel-Daypack/dp/B07T5D98RW/ref=sr_1_1_sspa?crid=1B22FMBJL5164&dib=eyJ2IjoiMSJ9.PxK1_BkzF9OxEs6oVTQv_-bYRx3aYia5JmlEqyZ6_CB-RBfBfTlrbrIIdyNyo1OwtfET1mrPyiqCRJK0a7Ec5dLy9E6GPLq6Jmt7mDjiB-WkgmCk9wuYTnXfo8QncbABs_yIzeDODI0Dt_Hv8eExAOBG6J1fwQ2p-9qnIVNEGnkALX-A3ChrVU8Z-MfIHzxwawai-mGVjsQVCVjYO0sZzl-crIkdLLTKuiIdoC3GrgM4JtiTexNbtepKwW4TTVTLfzNq4VtaQdaPhYh0CEeSMdC869u1TKQugTaj7Zb2oK0.GwKFUJxxfi5cOVQwVxS3Ipz_0DRELmQglCsjUt1_tB8&dib_tag=se&keywords=hiking+bag&qid=1711230922&sprefix=hikinh+bag+%2Caps%2C87&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Amazon</a</td>
+                            <td>$34.99</td>
+                        </tr>
+                        <tr>
+                            <td>Camera</td>
+                            <td><a href = "https://www.amazon.com/Vintage-Canon-AE-1-Program-Camera/dp/B0100QJILA/ref=sr_1_5?crid=5E4E7CLLPIW9&dib=eyJ2IjoiMSJ9.MiWy8cSk7Khn7mmv0ykAib-jnEw5Ehtw3OXlf9h6JGp2tr36KcJa-uDp02vy8Zb97qSTR2fVD5KklEynuPvebO4tt955d9RTqD8InUccpnBFR5YQNY2saYh5WhfUfZB19zJ0j88ecxK6EpEnb5IMt7eV51kEsQ44WaRZzsbl_DFbcoudYhyj000uiRlZAzexlKhtofB407QRiEKIIRPL07IEQiZV_I92d_Zwd3_vrhQ.Sn8cIVmI0CJWEy-WBt_Mx2SNZ9iBMb-rbGrDDZqc4F4&dib_tag=se&keywords=FIlm+camera+vintage&qid=1711230965&sprefix=film+camera+vintage%2Caps%2C85&sr=8-5">Amazon</a</td>
+                            <td>$399.99</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <div>
+                    <figure>
+                      <img src = "./images/AIHow.png">
+                     <figcaption>Man in Hiking Gear</figcaption>
+                    </figure>
+                    <p><i>Photo realistic man in hiking gear</i></p>
+                </div>
             </section>
 
 
@@ -117,13 +174,12 @@
        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
         <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
          </a>
-         <a href = "https://wave.webaim.org/report#/https://webpages.charlotte.edu/UNCCID/itis3135/hobbypage" id = "validation_link_accessibility">
+         <a href = "https://wave.webaim.org/report#/https://webpages.charlotte.edu/bcariell/itis3135/hobby/hobbypage.html" id = "validation_link_accessibility">
             <img style="border:0;width:88px;height:31px" src="./images/button_validation_wcag.png" alt="Valid accessibility!">
          </a>
          <script>
             document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-                 document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-                 //document.getElementById("validation_link_accessibility").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
          </script>
          
     </footer>
