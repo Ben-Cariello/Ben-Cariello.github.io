@@ -6,17 +6,17 @@
     <title>Hiking</title>
     <style>
         * {
-            background-color: #9E8FB2;
-            color: #FFFCE8;
-            align-content: center;
+            background-color: #519E8A;
+            color: #443730;
         }
         .when, .who, .where, .why, .how {
             display: none;
         }
         .NavButton {
-            width: 500px;
+            width: 200px;
             height: 45px;
             border: 1px solid black;
+            margin: 5px;
         }
         section {
             border: 1px solid black;
@@ -34,9 +34,9 @@
     <main>
         <div class = "Nav">
             <button class = "NavButton" id = "whatButton">Home</button>
-            <button class = "NavButton" id = "whoButton">About</button>
+            <button class = "NavButton" id = "whoButton">About Me</button>
             <button class = "NavButton" id = "whereButton">Location</button>
-            <button class = "NavButton" id = "whenButton">Favorite Times</button>
+            <button class = "NavButton" id = "whenButton">When To Go</button>
             <button class = "NavButton" id = "whyButton">Why</button>
             <button class = "NavButton" id = "howButton">Gear</button>
         </div>
@@ -48,7 +48,7 @@
                     concluded for the day, we would drive down Blue Ridge Parkway searching for different trails to hike. 
 
                 </p>
-                <div>
+                <div class = "AIPhoto">
                     <figure>
                         <img src = "./images/AIWhat.png" alt = "AI image">
                         <figcaption>Beautiful View of the Blue Ridge</figcaption>
@@ -62,39 +62,47 @@
                 
             </section>
             <section class = "who" id = "who">
-                <h2>About</h2>
+                <h2>About me</h2>
                 <p>
                     My name is Ben, I grew up in Cary, NC. Through out highschool, I made many friends who shared a love for hiking and photography. While we started small just walking short local trails,
                     we would soon plan a trip up to the Blue Ridge Mountains for our spring break. This would become our yearly tradition. Following graduation multiple of us went off to different colleges
                     while others started working. Despite the distance, we still meet up once a year for a trip to the mountains. Some years we just walk shorter trails and explore the different mountain towns, 
                     while other years we plan for specific day long trails. 
                 </p>
-                <img src = "./images/groupPhoto1.png" alt = "Group Photo by Crabtree falls" height = "1000" width = "800">
-                <div>
-                    <figure>
-                        <img src = "./images/AIWho.png" alt = "AI image">
-                        <figcaption>Trailhead</figcaption>
-                    </figure>
-                    <p><i>Mountain Trailhead</i></p>
-                </div>
+                <figure>
+                    <img src = "./images/groupPhoto1.png" alt = "Group Photo by Crabtree falls" height = "500" width = "400">
+                    <figcaption>Me and Friends at Crabtree Falls</figcaption>
+                </figure>
+                <figure>
+                    <img src = "./images/SoloPhoto1.png" alt = "Photo of me at Linville Falls" width = "400" height = "500">
+                    <figcaption>Me at Linville Falls</figcaption>
+                </figure>
+                    
             </section>
             <section class = "when" id = "when">
-                <h2>Favorite Locations</h2>
-                <img src = "./images/PhotoWhen1.png" width = "350" height = "600">
-                <img src = "./images/PhotoWhen2.png" width = "400" height = "700">
-                <img src = "./images/PhotoWhen3.png" width = "650" height = "800">
-                <div>
-                    <figure>
-                        <img src = "">
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
+                <h2>When should you visit?</h2>
+                <h3>Summer</h3>
+                <p>Pros: Longer days, Warm weather, More wildlife</p>
+                <p>Cons: Bigger crowds, Bugs, Heat</p>
+                <h3>Fall</h3>
+                <p>Pros: Beautiful color, Smaller crowds</p>
+                <p>Cons: Cold, Potential snow and ice</p>
+                <h3>Winter</h3>
+                <p>Pros: Small crowds, Quiet</p>
+                <p>Cons: Cold, Shorter days, Snow</p>
+                <h3>Spring</h3>
+                <p>Pros: Perfect weather, Small crowds</p>
+                <p>Cons: Shorter days, Cold nights, Some snow</p>
+                <figure>
+                    <img src="./images/PhotoWhen1.png" alt="Photo of a river" width="500" height = "700">
+                    <figcaption>Photo of a Flowing River</figcaption>
+                </figure>
             </section>
             <section class = "where" id = "where">
                 <h2>Blue Ridge Mountains</h2>
                 <p>The Blue Ridge is a mountain range that stretches 550 miles from Pennsylvania to Georgia. It was named such due to a bluish haze when viewing the mountains from a distance. These mountains are commonly referred to as one of the most beautiful parts of America, but the Blue Ridge Mountains are not only famous due to its breathtaking views. The Blue Ridge Parkway is the first national rural parkway built, and is over 450 miles long. This is where the mountains gain most of their notoriety. The parkway allows you to travel nearly the entire mountain range stoplight free, while enjoying the scenic views. Along the parkway are hundreds of trails, lookout points, and historical buildings. This is where we predominantly look for our trails. While we have done many of the big trails along the parkway, such as Grandfather mountain, we also like to do the random smaller trails that we find just by driving up or down the parkway.</p>   
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Afje_FN3bMk?si=33Jr2r7H6iohediD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Afje_FN3bMk?si=33Jr2r7H6iohediD" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class = "AIPhoto">
                     <figure>
                         <img src="./images/AIWhere.png" alt="AI Photo">
                      <figcaption>Photo of the Blue Ridge Parkway</figcaption>
@@ -106,8 +114,15 @@
             </section>
             <section class = "why" id = "why">
                 <h2>Why Hike?</h2>
-                <p>While beautiful views and exploring nature is why I enjoy hiking there are many reasons why you should hike. Hiking can have a massive positive impact on both your physical and mental health. Hiking</p>
-                
+                <h3>Physical Benefits</h3>
+                <p>While it may be obvious that hiking has many physical benefits, you may underestimate how vast they are. While hiking you are often walking on uneven surfaces, this small change between flat and uneven surfaces already causes some major differences. You burn 28% more calories walking on uneven terrain than walking on a flat surface. On top of this, it also helps your balance as your brain is constantly adjusting. Hiking has also been known to help prevent certain respiratory issues and boost your heart’s health. </p>
+                <h3>Mental Benefits</h3>
+                <p>One of the most overlooked factors of hiking is its positive effects on your mental health. According to a study from Stanford University, spending time outdoors calms the portion of your brain linked to mental illness, lowering your brain’s inclination towards negative thoughts. Hiking has also shown to lower your chance of depression and boosts your energy. While often unseen, hiking can have more than just physical benefits.</p>
+                <figure>
+                    <img src = "./images/HikingInfo.png" alt = "Hiking infographic" width = "550" height = "700">
+                    <figcaption>Hiking Infographic</figcaption>
+                </figure>
+
             </section>
             <section class = "how" id = "how">
                 <h2>Gear</h2>
@@ -152,7 +167,7 @@
                         
                     </tbody>
                 </table>
-                <div>
+                <div class = "AIPhoto">
                     <figure>
                       <img src = "./images/AIHow.png">
                      <figcaption>Man in Hiking Gear</figcaption>
