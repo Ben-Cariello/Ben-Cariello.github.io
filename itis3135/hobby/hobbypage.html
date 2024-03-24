@@ -7,29 +7,81 @@
     <style>
         * {
             background-color: #519E8A;
-            color: #443730;
+            color: #0B0014;
+            font-family:Tahoma, sans-serif Verdana;
+        }
+        h1 {
+            text-align: center;
         }
         .when, .who, .where, .why, .how {
             display: none;
+            text-align: center;
+        }
+        .what {
+            text-align:center;
         }
         .NavButton {
             width: 200px;
             height: 45px;
             border: 1px solid black;
             margin: 5px;
+            position:relative;
+            transition-duration: 0.4s;
+            background-color:#B89685;
+            align-content: center;
+            margin-left: 3%;
+            margin-right: auto;
         }
-        section {
-            border: 1px solid black;
-            margin: 5px;
-        }
-        h2 {
+        .Nav {
             text-align: center;
         }
+        .NavButton:hover {
+            background-color:#F7B2BD;
+            color:#ffffff;
+        }
+        section {
+            margin: 5px;
+        }
+        .whoPhoto, .whyMedia, .howMedia {
+            display: inline-block;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .whenPic, .whenInfo {
+            display: inline-block;
+        }
+        .whenInfo {
+            padding-bottom: 5%;
+        }
+        .whereMedia {
+            text-align: center;
+            display: inline-block;
+        }
+        iframe{
+            margin-bottom: 10%;
+        }
+        footer {
+            margin: 5%;
+        }
+        table, th, td {
+            border-collapse:  collapse;
+            border-spacing: 5px;
+            position: relative;
+            margin: auto;
+            border: 2px solid black;
+            padding: 25px; 
+        }
+        table {
+            margin-bottom: 10%;
+        }
+        
+        
     </style>
 </head>
 <body>
     <header>
-        <h1>Hiking</h1>
+        <h1><b>Hiking</b></h1>
     </header>
     <main>
         <div class = "Nav">
@@ -48,7 +100,7 @@
                     concluded for the day, we would drive down Blue Ridge Parkway searching for different trails to hike. 
 
                 </p>
-                <div class = "AIPhoto">
+                <div class = "whatPhoto">
                     <figure>
                         <img src = "./images/AIWhat.png" alt = "AI image">
                         <figcaption>Beautiful View of the Blue Ridge</figcaption>
@@ -64,46 +116,57 @@
             <section class = "who" id = "who">
                 <h2>About me</h2>
                 <p>
-                    My name is Ben, I grew up in Cary, NC. Through out highschool, I made many friends who shared a love for hiking and photography. While we started small just walking short local trails,
+                    My name is Ben, I grew up in Cary, NC. Throughout highschool, I made many friends who shared a love for hiking and photography. While we started small just walking short local trails,
                     we would soon plan a trip up to the Blue Ridge Mountains for our spring break. This would become our yearly tradition. Following graduation multiple of us went off to different colleges
                     while others started working. Despite the distance, we still meet up once a year for a trip to the mountains. Some years we just walk shorter trails and explore the different mountain towns, 
                     while other years we plan for specific day long trails. 
                 </p>
+                <div class = "whoPhoto">
                 <figure>
                     <img src = "./images/groupPhoto1.png" alt = "Group Photo by Crabtree falls" height = "500" width = "400">
                     <figcaption>Me and Friends at Crabtree Falls</figcaption>
                 </figure>
+                </div>
+                <div class = "whoPhoto">
                 <figure>
                     <img src = "./images/SoloPhoto1.png" alt = "Photo of me at Linville Falls" width = "400" height = "500">
                     <figcaption>Me at Linville Falls</figcaption>
                 </figure>
+                </div>
                     
             </section>
             <section class = "when" id = "when">
                 <h2>When should you visit?</h2>
-                <h3>Summer</h3>
-                <p>Pros: Longer days, Warm weather, More wildlife</p>
-                <p>Cons: Bigger crowds, Bugs, Heat</p>
-                <h3>Fall</h3>
-                <p>Pros: Beautiful color, Smaller crowds</p>
-                <p>Cons: Cold, Potential snow and ice</p>
-                <h3>Winter</h3>
-                <p>Pros: Small crowds, Quiet</p>
-                <p>Cons: Cold, Shorter days, Snow</p>
-                <h3>Spring</h3>
-                <p>Pros: Perfect weather, Small crowds</p>
-                <p>Cons: Shorter days, Cold nights, Some snow</p>
+                <div class = "whenInfo">
+                    <h3>Summer</h3>
+                    <p><b>Pros:</b> Longer days, Warm weather, More wildlife</p>
+                    <p><b>Cons:</b> Bigger crowds, Bugs, Heat</p>
+                    <h3>Fall</h3>
+                    <p><b>Pros:</b> Beautiful color, Smaller crowds</p>
+                    <p><b>Cons:</b> Cold, Potential snow and ice</p>
+                    <h3>Winter</h3>
+                    <p><b>Pros:</b> Small crowds, Quiet</p>
+                    <p><b>Cons:</b> Cold, Shorter days, Snow</p>
+                    <h3>Spring</h3>
+                    <p><b>Pros:</b> Perfect weather, Small crowds</p>
+                    <p><b>Cons:</b> Shorter days, Cold nights, Some snow</p>
+                    </div>
+                
+                <div class = "whenPic">
                 <figure>
-                    <img src="./images/PhotoWhen1.png" alt="Photo of a river" width="500" height = "700">
+                    <img src="./images/PhotoWhen1.png" alt="Photo of a river" width="400" height = "500">
                     <figcaption>Photo of a Flowing River</figcaption>
                 </figure>
+            </div>
             </section>
             <section class = "where" id = "where">
                 <h2>Blue Ridge Mountains</h2>
                 <p>The Blue Ridge is a mountain range that stretches 550 miles from Pennsylvania to Georgia. It was named such due to a bluish haze when viewing the mountains from a distance. These mountains are commonly referred to as one of the most beautiful parts of America, but the Blue Ridge Mountains are not only famous due to its breathtaking views. The Blue Ridge Parkway is the first national rural parkway built, and is over 450 miles long. This is where the mountains gain most of their notoriety. The parkway allows you to travel nearly the entire mountain range stoplight free, while enjoying the scenic views. Along the parkway are hundreds of trails, lookout points, and historical buildings. This is where we predominantly look for our trails. While we have done many of the big trails along the parkway, such as Grandfather mountain, we also like to do the random smaller trails that we find just by driving up or down the parkway.</p>   
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Afje_FN3bMk?si=33Jr2r7H6iohediD" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div class = "AIPhoto">
-                    <figure>
+                <div class = "whereMedia">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Afje_FN3bMk?si=33Jr2r7H6iohediD" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>    
+                <div class = "whereMedia">
+                    <figure id = "AIWhere">
                         <img src="./images/AIWhere.png" alt="AI Photo">
                      <figcaption>Photo of the Blue Ridge Parkway</figcaption>
                     </figure>
@@ -113,21 +176,26 @@
                 
             </section>
             <section class = "why" id = "why">
-                <h2>Why Hike?</h2>
+                <h2>Why Should You Hike?</h2>
+                <div class = "whyMedia">
+                <figure>
+                    <img src = "./images/HikingInfo.png" alt = "Hiking infographic" width = "450" height = "600">
+                    <figcaption>Hiking Infographic</figcaption>
+                </figure>
+                </div>
                 <h3>Physical Benefits</h3>
                 <p>While it may be obvious that hiking has many physical benefits, you may underestimate how vast they are. While hiking you are often walking on uneven surfaces, this small change between flat and uneven surfaces already causes some major differences. You burn 28% more calories walking on uneven terrain than walking on a flat surface. On top of this, it also helps your balance as your brain is constantly adjusting. Hiking has also been known to help prevent certain respiratory issues and boost your heart’s health. </p>
                 <h3>Mental Benefits</h3>
                 <p>One of the most overlooked factors of hiking is its positive effects on your mental health. According to a study from Stanford University, spending time outdoors calms the portion of your brain linked to mental illness, lowering your brain’s inclination towards negative thoughts. Hiking has also shown to lower your chance of depression and boosts your energy. While often unseen, hiking can have more than just physical benefits.</p>
-                <figure>
-                    <img src = "./images/HikingInfo.png" alt = "Hiking infographic" width = "550" height = "700">
-                    <figcaption>Hiking Infographic</figcaption>
-                </figure>
+                
 
             </section>
             <section class = "how" id = "how">
                 <h2>Gear</h2>
                 <p>The first step to going on a hike is preparing. What you take with you is extremely important. Below is a table compiled of what I like to take on my hikes as well as a link to a quality brand of that item, while not all of it is required it certainly makes the hikes much more manageable.</p>
-                <table class = "gearTable">
+                <div class = "howMedia">
+
+                   <table class = "gearTable">
                     <tbody>
                         <tr>
                             <th><b>Gear</b></th>
@@ -146,30 +214,31 @@
                         </tr>
                         <tr>
                             <td>Water Bottle</td>
-                            <td><a href = "https://www.amazon.com/CamelBak-Chute-Bottle-Tritan-Charcoal/dp/B08QTSVJF3/ref=sr_1_5?crid=14G9V0ET9E60N&dib=eyJ2IjoiMSJ9.L3dJWKsadBBl4uZISlvF0b8SJcgi39dpmRTQ4UXg4n2tfjwBthTYkgXcD8EscaIsNLeiEueklb2K5KgZwyUKcWMkWETkn-MyhWw4wwg55s0BJ-M6fjjU1bZYZ9gdNSM9nhKu-8MSwVamSjzrTLlolAZtQ_-BSaHx8nFs8BX25OeLbS6FAsPobWXluQKVUamf7oj7JSh3vWyHDy0XnQEx0FeBbZ8-8xX00HB4CoKkIDCPBvULfQ4-agM_Nrg-A6276OEPSazefqqlx5zE2xPaNpC0Q5ol_o8rbrByhjbK1TE.ZNFjqapdmPC-LRju4ceELGhgeMh3BWPS8k22lMcoHjA&dib_tag=se&keywords=hiking+water+bottle&qid=1711230788&sprefix=hiking+water+bottle%2Caps%2C83&sr=8-5">Amazon</a</td>
+                            <td><a href = "https://www.amazon.com/CamelBak-Chute-Bottle-Tritan-Charcoal/dp/B08QTSVJF3/ref=sr_1_5?crid=14G9V0ET9E60N&dib=eyJ2IjoiMSJ9.L3dJWKsadBBl4uZISlvF0b8SJcgi39dpmRTQ4UXg4n2tfjwBthTYkgXcD8EscaIsNLeiEueklb2K5KgZwyUKcWMkWETkn-MyhWw4wwg55s0BJ-M6fjjU1bZYZ9gdNSM9nhKu-8MSwVamSjzrTLlolAZtQ_-BSaHx8nFs8BX25OeLbS6FAsPobWXluQKVUamf7oj7JSh3vWyHDy0XnQEx0FeBbZ8-8xX00HB4CoKkIDCPBvULfQ4-agM_Nrg-A6276OEPSazefqqlx5zE2xPaNpC0Q5ol_o8rbrByhjbK1TE.ZNFjqapdmPC-LRju4ceELGhgeMh3BWPS8k22lMcoHjA&dib_tag=se&keywords=hiking+water+bottle&qid=1711230788&sprefix=hiking+water+bottle%2Caps%2C83&sr=8-5">Amazon</a></td>
                             <td>$19.00</td>
                         </tr>
                         <tr>
                             <td>Trekking Pole</td>
-                            <td><a href = "https://www.amazon.com/TrailBuddy-Walking-Poles-Collapsible-Lightweight/dp/B01N1L8SKX/ref=sr_1_1_sspa?crid=1VRICHH7MEQ9Q&dib=eyJ2IjoiMSJ9.bX1LY-ZMojkND9PW-A78RAFRC-ehtDDAN0u_2GfxY_lsQwkKUUvoUKP-KX2tAaBiDbUF13GJ4s-td3l6_bW7XG7_gBHPektEWK_vrgKi01jbNd7Utp1plbcbA4kBZb4nxBmrQi2598qCHBElk9wEWIeoEp8r40baFffWgkv0WzvheVv8QJLo4MOxqo4wzvBLucuV1vvMpXp78KvbmEJRfhRZOFFIFAOPluBv6pT2lo4.lMp3AyVjPbAFq_QJ_6dlj3oRb8XhYgoqpFI-tIGuG70&dib_tag=se&keywords=hiking%2Bwalking%2Bstick&qid=1711230873&sprefix=hikinh%2Bwalking%2Bstick%2Caps%2C88&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&smid=A2JSS8JZT2LG97&th=1">Amazon</a</td>
+                            <td><a href = "https://www.amazon.com/TrailBuddy-Walking-Poles-Collapsible-Lightweight/dp/B01N1L8SKX/ref=sr_1_1_sspa?crid=1VRICHH7MEQ9Q&dib=eyJ2IjoiMSJ9.bX1LY-ZMojkND9PW-A78RAFRC-ehtDDAN0u_2GfxY_lsQwkKUUvoUKP-KX2tAaBiDbUF13GJ4s-td3l6_bW7XG7_gBHPektEWK_vrgKi01jbNd7Utp1plbcbA4kBZb4nxBmrQi2598qCHBElk9wEWIeoEp8r40baFffWgkv0WzvheVv8QJLo4MOxqo4wzvBLucuV1vvMpXp78KvbmEJRfhRZOFFIFAOPluBv6pT2lo4.lMp3AyVjPbAFq_QJ_6dlj3oRb8XhYgoqpFI-tIGuG70&dib_tag=se&keywords=hiking%2Bwalking%2Bstick&qid=1711230873&sprefix=hikinh%2Bwalking%2Bstick%2Caps%2C88&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&smid=A2JSS8JZT2LG97&th=1">Amazon</a></td>
                             <td>$29.99</td>
                         </tr>
                         <tr>
                             <td>Backpack</td>
-                            <td><a href = "https://www.amazon.com/Waterfly-Crossbody-Backpack-Travel-Daypack/dp/B07T5D98RW/ref=sr_1_1_sspa?crid=1B22FMBJL5164&dib=eyJ2IjoiMSJ9.PxK1_BkzF9OxEs6oVTQv_-bYRx3aYia5JmlEqyZ6_CB-RBfBfTlrbrIIdyNyo1OwtfET1mrPyiqCRJK0a7Ec5dLy9E6GPLq6Jmt7mDjiB-WkgmCk9wuYTnXfo8QncbABs_yIzeDODI0Dt_Hv8eExAOBG6J1fwQ2p-9qnIVNEGnkALX-A3ChrVU8Z-MfIHzxwawai-mGVjsQVCVjYO0sZzl-crIkdLLTKuiIdoC3GrgM4JtiTexNbtepKwW4TTVTLfzNq4VtaQdaPhYh0CEeSMdC869u1TKQugTaj7Zb2oK0.GwKFUJxxfi5cOVQwVxS3Ipz_0DRELmQglCsjUt1_tB8&dib_tag=se&keywords=hiking+bag&qid=1711230922&sprefix=hikinh+bag+%2Caps%2C87&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Amazon</a</td>
+                            <td><a href = "https://www.amazon.com/Waterfly-Crossbody-Backpack-Travel-Daypack/dp/B07T5D98RW/ref=sr_1_1_sspa?crid=1B22FMBJL5164&dib=eyJ2IjoiMSJ9.PxK1_BkzF9OxEs6oVTQv_-bYRx3aYia5JmlEqyZ6_CB-RBfBfTlrbrIIdyNyo1OwtfET1mrPyiqCRJK0a7Ec5dLy9E6GPLq6Jmt7mDjiB-WkgmCk9wuYTnXfo8QncbABs_yIzeDODI0Dt_Hv8eExAOBG6J1fwQ2p-9qnIVNEGnkALX-A3ChrVU8Z-MfIHzxwawai-mGVjsQVCVjYO0sZzl-crIkdLLTKuiIdoC3GrgM4JtiTexNbtepKwW4TTVTLfzNq4VtaQdaPhYh0CEeSMdC869u1TKQugTaj7Zb2oK0.GwKFUJxxfi5cOVQwVxS3Ipz_0DRELmQglCsjUt1_tB8&dib_tag=se&keywords=hiking+bag&qid=1711230922&sprefix=hikinh+bag+%2Caps%2C87&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Amazon</a></td>
                             <td>$34.99</td>
                         </tr>
                         <tr>
                             <td>Camera</td>
-                            <td><a href = "https://www.amazon.com/Vintage-Canon-AE-1-Program-Camera/dp/B0100QJILA/ref=sr_1_5?crid=5E4E7CLLPIW9&dib=eyJ2IjoiMSJ9.MiWy8cSk7Khn7mmv0ykAib-jnEw5Ehtw3OXlf9h6JGp2tr36KcJa-uDp02vy8Zb97qSTR2fVD5KklEynuPvebO4tt955d9RTqD8InUccpnBFR5YQNY2saYh5WhfUfZB19zJ0j88ecxK6EpEnb5IMt7eV51kEsQ44WaRZzsbl_DFbcoudYhyj000uiRlZAzexlKhtofB407QRiEKIIRPL07IEQiZV_I92d_Zwd3_vrhQ.Sn8cIVmI0CJWEy-WBt_Mx2SNZ9iBMb-rbGrDDZqc4F4&dib_tag=se&keywords=FIlm+camera+vintage&qid=1711230965&sprefix=film+camera+vintage%2Caps%2C85&sr=8-5">Amazon</a</td>
+                            <td><a href = "https://www.amazon.com/Vintage-Canon-AE-1-Program-Camera/dp/B0100QJILA/ref=sr_1_5?crid=5E4E7CLLPIW9&dib=eyJ2IjoiMSJ9.MiWy8cSk7Khn7mmv0ykAib-jnEw5Ehtw3OXlf9h6JGp2tr36KcJa-uDp02vy8Zb97qSTR2fVD5KklEynuPvebO4tt955d9RTqD8InUccpnBFR5YQNY2saYh5WhfUfZB19zJ0j88ecxK6EpEnb5IMt7eV51kEsQ44WaRZzsbl_DFbcoudYhyj000uiRlZAzexlKhtofB407QRiEKIIRPL07IEQiZV_I92d_Zwd3_vrhQ.Sn8cIVmI0CJWEy-WBt_Mx2SNZ9iBMb-rbGrDDZqc4F4&dib_tag=se&keywords=FIlm+camera+vintage&qid=1711230965&sprefix=film+camera+vintage%2Caps%2C85&sr=8-5">Amazon</a></td>
                             <td>$399.99</td>
                         </tr>
                         
                     </tbody>
                 </table>
-                <div class = "AIPhoto">
+                </div>
+                <div class = "howMedia">
                     <figure>
-                      <img src = "./images/AIHow.png">
+                      <img src = "./images/AIHow.png" alt = "Man in hiking gear">
                      <figcaption>Man in Hiking Gear</figcaption>
                     </figure>
                     <p><i>Photo realistic man in hiking gear</i></p>
