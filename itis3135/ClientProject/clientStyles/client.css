@@ -1,0 +1,39 @@
+body{
+    background-color: #93745B;
+    color: #341C1C;
+    text-align: center;
+}
+#homeImg {
+    width: 400px;
+}
+#navButton, .dropdown {
+ width: 100%;
+ color:  #230007;
+ background-color: #7D7461;
+}
+#navButton {
+    font-size: 95px;
+}
+.dropdown {
+    display:none;
+    text-align: center;
+    font-size: 70px;
+}
+.dropdown:hover{
+    transition-duration: 0.4s;
+    background-color: #2F4550;
+    color: #FAFFD8;
+}
+.homeText {
+    text-align: left;
+}
+.container{
+    margin: auto;
+    text-align: center;
+}
+#missionStatement {
+    float:left;
+}
+#news {
+    float:left;
+}
