@@ -110,3 +110,18 @@ legend {
     background-color: #FAFFD7 ;
     color: #230007;
 }
+.orderDiv {
+    margin: auto;
+    border: 1px solid black;
+    text-align: left;
+}
+.amount, #placedLabel{
+    display: none; 
+}
+#total {
+    font-size: larger;
+    font-weight: bold;
+}
+.amountLabel {
+    display: none;
+}

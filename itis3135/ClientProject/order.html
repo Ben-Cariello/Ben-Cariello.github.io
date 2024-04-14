@@ -35,17 +35,68 @@
    <main>
     <h1>Online Order</h1>
     <form>
+    <div>
+        <h2>Required Information</h2>
         <div class = "orderDiv">
-            <label>Premium Coffee</label>
-            <input type = "checkbox" id = "premiumCoffee">
-            <input type = "number" max = "10">
+            <label>Name:</label>
+            <input type="text" required placeholder = "First and Last Name">
+            <label>Phone Number:</label>
+            <input type="tel" required placeholder="(999) 999-9999">
         </div>
-
+        <h2>Coffee</h2>
+        <div class = "orderDiv">
+            <label>Fresh Coffee</label>
+            <input type = "checkbox" id = "fresh" class = "orderCheck">
+            <label id="freshLabel" class = "amountLabel">Amount:</label>
+            <input value = "1" placeholder = "1-10" type = "number" max = "10" min = "1" class = "amount" id = "freshAmount">
+        </div>
+        <div class = "orderDiv">
+            <label>Premium Latte</label>
+            <input type = "checkbox" id = "latte" class = "orderCheck">
+            <label id="latteLabel"  class = "amountLabel">Amount:</label>
+            <input value = "1"  placeholder = "1-10" type = "number" min = "1" max = "10" class = "amount" id="latteAmount">
+        </div>
+        <div class = "orderDiv">
+            <label>Blended Coffee</label>
+            <input type = "checkbox" id = "blended" class = "orderCheck">
+            <label id="blendedLabel"  class = "amountLabel">Amount:</label>
+            <input value = "1" placeholder = "1-10" type = "number" max = "10" min = "1" class = "amount" id="blendedAmount">
+        </div>
+    </div>
+    <div>
+        <h2>Waffles</h2>
+        <div class = "orderDiv">
+            <label>Deluxe Waffle</label>
+            <input type = "checkbox" id = "deluxe" class = "orderCheck">
+            <label id="deluxeLabel"  class = "amountLabel">Amount:</label>
+            <input value = "1" placeholder = "1-10" type = "number" max = "10" min = "1" class = "amount" id="deluxeAmount">
+        </div>
+        <div class = "orderDiv">
+            <label>Blueberry Creme</label>
+            <input type = "checkbox" id = "blueberry" class = "orderCheck">
+            <label id="blueberryLabel"  class = "amountLabel">Amount:</label>
+            <input value = "1" placeholder = "1-10" type = "number" max = "10" min = "1" class = "amount" id="blueberryAmount">
+        </div>
+        <div class = "orderDiv">
+            <label>Apple Pie</label>
+            <input type = "checkbox" id = "apple" class = "orderCheck">
+            <label id="appleLabel"  class = "amountLabel">Amount:</label>
+            <input value = "1" placeholder = "1-10" type = "number" max = "10" min = "1" class = "amount" id="appleAmount">
+            
+        </div>
+    </div>
+<p id="total">Your total is: $0.00</p>
+<div id = "placedLabel">
+    <p>Your order is placed! Please give us 15-20 minutes before arriving to prepare your food fresh.</p>
+</div>
+<button type="submit" class="orderButton" id="orderSubmit">Place Order</button>
+<button type="reset" class = "orderButton" id="orderReset">Reset</button>
     </form>
    </main>
    <footer>
 
    </footer>
    <script src = "clientScript/navBar.js"></script>
+   <script src = "clientScript/orderOnline.js"></script>
 </body>
 </html>
