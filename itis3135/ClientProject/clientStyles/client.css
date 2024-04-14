@@ -3,8 +3,20 @@ body{
     color: #341C1C;
     text-align: center;
 }
+header{
+   border:1px solid black;
+}
+footer {
+    float:inline-end;
+    margin-top: 5%;
+    text-align: left;
+    background-color: #7D7461;
+    color:#230007;
+    width: 100%;
+    height: 5%;
+}
 #homeImg {
-    width: 400px;
+    width: 450px;
 }
 #navButton, .dropdown {
  width: 100%;
@@ -14,10 +26,14 @@ body{
 #navButton {
     font-size: 95px;
 }
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
 .dropdown {
     display:none;
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
 }
 .dropdown:hover{
     transition-duration: 0.4s;
@@ -30,10 +46,67 @@ body{
 .container{
     margin: auto;
     text-align: center;
+    padding: 5%;
 }
-#missionStatement {
+#missionStatement, #news {
     float:left;
+    margin-left: 15%;
 }
-#news {
-    float:left;
+.menuPhoto {
+    width: 200px;
+    height: 150px;
+    flex-wrap: wrap;
+}
+#menu {
+    width: 60%;
+    margin: auto;
+    display:inline;
+}
+.menuGroup {
+    overflow:hidden;
+    width: 60%;
+    max-height: 5%;
+    margin: auto;
+}
+.menuItem {
+    display: inline-block;
+    margin: 2%;
+    margin: auto;
+}
+.menuName {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+}
+.hours {
+    
+    align-items: center;
+    list-style-type: none;
+    font-size: larger;
+}
+form {
+    text-align: center;
+}
+.formSection {
+    max-width: 60%;
+    max-height: 20%;
+    padding-top: 30px;
+    margin: auto;
+}
+legend {
+    font-weight: bolder;
+}
+.formbuttons {
+    width: 31.5%;
+    color: #FAFFD8;
+    background-color: #230007;
+    text-align: center; 
+    margin: 25px auto;
+    line-height: 25px;
+    font-size: large;
+}
+.formbuttons:hover {
+    transition-duration: 0.4s;
+    background-color: #FAFFD7 ;
+    color: #230007;
 }
