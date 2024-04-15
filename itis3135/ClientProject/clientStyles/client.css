@@ -112,16 +112,20 @@ legend {
 }
 .orderDiv {
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid #230007;
     text-align: left;
-}
-.amount, #placedLabel{
-    display: none; 
+    margin-left: 40%;
+    margin-right: 40%;
 }
 #total {
     font-size: larger;
     font-weight: bold;
 }
-.amountLabel {
+.amountLabel, .amount {
     display: none;
+}
+
+#location {
+display: inline;
+margin: auto;
 }

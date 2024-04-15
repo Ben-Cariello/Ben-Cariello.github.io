@@ -4,6 +4,7 @@
  var amountInput = document.querySelectorAll('.amount');
  var resetButton = document.getElementById('orderReset');
  var submitButton = document.getElementById('orderSubmit');
+ const placedLabel = document.getElementById('placedLabel');
   let freshCost = 2.89;
   let latteCost = 4.75; 
   let blendedCost = 5.95;
@@ -78,19 +79,19 @@ resetButton.addEventListener('click', function() {
     //loop through every checkbox
     checkboxes.forEach(function(checkbox) {
         var numberInput = document.getElementById(checkbox.id + 'Amount');
-        var label = document.getElementById(checkbox.id + 'Label');
+        var labelAmount = document.getElementById(checkbox.id + 'Label');
         // Toggle visibility of the number input based on checkbox's checked state
         numberInput.style.display ='none';
         numberInput.required ='false';
-        label.style.display ='none';
+        labelAmount.style.display = 'none'
     });
     
     document.getElementById('total').textContent = "Your total is: $0.00";
 });
 
-//Displays information after food has been submitted
-submitButton.addEventListener('submit', function() {
-    let finalLabel = document.getElementById('#placedLabel')
-    finalLabel.style.display = 'inline-block';
+const orderForm = document.getElementById('orderForm');
+
+// Add an event listener to the form's submit event
+orderForm.addEventListener('submit', function() {
+        placedLabel.style.display = 'block';
 });
- 

@@ -34,12 +34,13 @@
    </header>
    <main>
     <h1>Online Order</h1>
-    <form>
+    <form id = 'orderForm'>
     <div>
         <h2>Required Information</h2>
         <div class = "orderDiv">
             <label>Name:</label>
             <input type="text" required placeholder = "First and Last Name">
+            <br>
             <label>Phone Number:</label>
             <input type="tel" required placeholder="(999) 999-9999">
         </div>
@@ -72,7 +73,7 @@
             <input value = "1" placeholder = "1-10" type = "number" max = "10" min = "1" class = "amount" id="deluxeAmount">
         </div>
         <div class = "orderDiv">
-            <label>Blueberry Creme</label>
+            <label>Blueberry Cream</label>
             <input type = "checkbox" id = "blueberry" class = "orderCheck">
             <label id="blueberryLabel"  class = "amountLabel">Amount:</label>
             <input value = "1" placeholder = "1-10" type = "number" max = "10" min = "1" class = "amount" id="blueberryAmount">
@@ -86,12 +87,12 @@
         </div>
     </div>
 <p id="total">Your total is: $0.00</p>
-<div id = "placedLabel">
-    <p>Your order is placed! Please give us 15-20 minutes before arriving to prepare your food fresh.</p>
-</div>
-<button type="submit" class="orderButton" id="orderSubmit">Place Order</button>
-<button type="reset" class = "orderButton" id="orderReset">Reset</button>
+<button type="submit" class="formbuttons" id="orderSubmit">Place Order</button>
+<button type="reset" class = "formbuttons" id="orderReset">Reset</button>
     </form>
+<div id = "placedLabel">
+        <p>Once your order is placed please provide us with 15-20 minutes before arriving. Thank you.</p>
+</div>
    </main>
    <footer>
 
