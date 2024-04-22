@@ -16,7 +16,6 @@ footer {
 }
 img{
     width: 40%;
-    max-width: 10cm;
     align-content: center;
 }
 a {
@@ -82,4 +81,7 @@ button {
 }  
 .complexTable {
     color: black;
+}
+.reviewerror {
+    color : #ff817e;
 }
