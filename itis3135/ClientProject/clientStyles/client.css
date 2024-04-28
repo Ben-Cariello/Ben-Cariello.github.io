@@ -47,7 +47,7 @@ h1 {
 .container{
     margin: auto;
     text-align: center;
-    padding: 5%;
+  
 }
 #missionStatement, #news {
     float:left;
