@@ -85,3 +85,8 @@ button {
 .reviewerror {
     color : #ff817e;
 }
+#nocss {
+    margin: 15px;
+    background-color: #483a58;
+    color:#EFBDEB;
+} 
