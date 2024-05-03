@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Cariello's Blitzing Cardinal || ITIS3135 </title>
+    <link rel="stylesheet" href = "styles/default.css">
+</head>
+<body>
+   <header>
+    <div data-include="components/header.html"></div>
+   </header> 
+   <main>
+        <h2>First Scripts</h2>
+        <h3 id="time">Date and Time</h3>
+        <div>
+        <form id = "nameForm" onsubmit="displayData()">
+            <label for = "name">Enter Name: </label>
+            <input id = "name" type = "text">
+            <br>
+            <label for = "feeling">How are you feeling?</label>
+            <input id = "feeling" type = "text">
+            <br>
+            <button type = "submit">Submit</button>
+            <button type = "reset" onclick="clearData()">Reset</button>
+        </form>
+        <p id = "display"></p>
+        </div>
+        <div>
+            <form id = "numberForm" onsubmit="displayPoly()">
+                <label for = "polynum">How many sides does it have?</label>
+                <input type = "number" id = "polynum" max = "10">
+                <br>
+                <button type = "submit">Submit</button>
+                <button type = "reset">Clear</button>
+            </form>
+            <p id = "polydisplay"></p>
+        </div>
+
+        <div>
+            <h4>Add Two Numbers</h4> 
+             <form id = "add" onsubmit="calcsum()">
+                <label for ="numone">Enter a number: </label>
+                <input id = "numone" type = "text">
+                <br>
+                <label for ="numtwo">Enter a number: </label>
+                <input id = "numtwo" type = "text">
+                <br>
+                <button type = "submit">Submit</button>
+                <button type = "reset">Clear</button>
+             </form>
+             <p id = "sumdisplay"></p>
+        </div>
+
+        <div> 
+            <h4>Generate Catchphrase</h4>
+            <button onclick="catchphrase()">Generate</button>
+            <p id = "buttontwodisplay"></p> 
+        </div>
+
+
+        <div>  
+            <h4>Knock on the door</h4>
+            <img id = "doorimg" src = "images/doorClosed.png" alt = "Photo of a door">
+            <br>
+            <button id = "knock" onclick="openDoor()">Knock</button>
+        </div>
+        <div>  
+            <h4>Palindrome Tester</h4>
+            <form onsubmit="palindromeTester()">
+                <label for="palindromeinput">Enter a word:</label>
+                <input type = "text" id = "palindromeinput">
+                <br>
+                <button type = "submit">Submit</button>
+                <button type = "reset">Clear</button>
+            </form>
+            <p id = "palindromedisplay"></p>
+        </div>
+
+        <div>  
+            <h4>Flip Screen</h4>
+            <button onclick="flip()">Do a Flip!</button>
+        </div>
+
+   </main>
+   <footer>
+    <div data-include="components/footer.html"></div>
+   </footer>
+   <script src = "./scripts/include.js"></script>
+   <script src = "scripts/defaultscripts.js"></script>
+</body>
+</html>
