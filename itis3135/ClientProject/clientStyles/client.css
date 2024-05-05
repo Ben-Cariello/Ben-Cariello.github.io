@@ -1,7 +1,11 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 body{
     background-color: #93745B;
     color: #341C1C;
-    text-align: center;
+   text-align: center;
+  z-index: 2;
 }
 html, body {
     min-height: 99%;
@@ -14,7 +18,7 @@ footer {
     background-color: #7D7461;
     color:#230007;
     width: 100%;
-    
+    margin-top: 5%;
 }
 #homeImg {
     width: 450px;
@@ -23,9 +27,15 @@ footer {
  width: 100%;
  color:  #230007;
  background-color: #7D7461;
+ position: relative;
+ z-index: 1;
 }
 #navButton {
     font-size: 95px;
+    ;
+}
+#navButton:hover {
+    text-decoration: underline;
 }
 h1 {
     font-size: 70px;

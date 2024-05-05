@@ -7,10 +7,11 @@ const dropDownElements = document.querySelectorAll('.dropdown');
 var keyArray = Object.keys(dropDownElements);
 
 //Checks if the mouse is over the nav bar
-navButton.addEventListener("mouseover", function() {
+navButton.addEventListener("click", function() {
     keyArray.forEach(function(key){
-        dropDownElements[key].style.display = 'block';
+            dropDownElements[key].style.display = 'block';
     });
+    navButton.textContent = "⇓Cast Iron Waffles";
 });
 //checks if the mouse has left the nav bar
 dropdown.addEventListener("mouseout", function (event) {
@@ -18,5 +19,7 @@ dropdown.addEventListener("mouseout", function (event) {
         keyArray.forEach(function(key){
             dropDownElements[key].style.display = 'none';
         });
+        navButton.textContent = "⇒Cast Iron Waffles";
     }
+    
 });

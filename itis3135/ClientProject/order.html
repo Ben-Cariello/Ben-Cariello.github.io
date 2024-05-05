@@ -9,7 +9,7 @@
 <body>
    <header>
     <div class="navDiv" id ="navDiv">
-    <button id ="navButton">Cast Iron Waffles</button>
+    <button id ="navButton">⇒Cast Iron Waffles</button>
     <div class="dropdown" id = "dropdownDiv">
         <nav>
             <div class="dropdown">
@@ -34,7 +34,7 @@
    </header>
    <main>
     <h1>Online Order</h1>
-    <form id = 'orderForm'>
+    <form id = 'orderForm' onsubmit="placed()">
     <div>
         <h2>Required Information</h2>
         <div class = "orderDiv">
@@ -90,9 +90,7 @@
 <button type="submit" class="formbuttons" id="orderSubmit">Place Order</button>
 <button type="reset" class = "formbuttons" id="orderReset">Reset</button>
     </form>
-<div id = "placedLabel">
-        <p>Once your order is placed please provide us with 15-20 minutes before arriving. Thank you.</p>
-</div>
+    <p id = "placedLabel"></p>
    </main>
    <footer>
     <div data-include="components/footer.html"></div>

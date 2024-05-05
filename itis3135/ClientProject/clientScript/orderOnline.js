@@ -87,11 +87,19 @@ resetButton.addEventListener('click', function() {
     });
     
     document.getElementById('total').textContent = "Your total is: $0.00";
+    document.getElementById('placedLabel').textContent = "";
 });
 
 const orderForm = document.getElementById('orderForm');
 
-// Add an event listener to the form's submit event
-orderForm.addEventListener('submit', function() {
-        placedLabel.style.display = 'block';
-});
+function placed() {
+    //preventing the usual submit function
+    event.preventDefault();
+    //variables
+    const display = document.getElementById('placedLabel');
+    let text = "Your order has been placed! Please arrive in 10-15 minutes for pick up."
+
+    //displaying text
+    display.innerHTML = text;
+
+}
