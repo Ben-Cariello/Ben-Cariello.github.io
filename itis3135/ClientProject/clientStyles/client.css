@@ -1,9 +1,14 @@
+:root {
+    --main: #93745B;
+    --text: #090C02;
+    --title: #230007;
+}
 *{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 body{
-    background-color: #93745B;
-    color: #341C1C;
+    background-color: var(--main);
+    color: var(--text);
    text-align: center;
   z-index: 2;
 }
@@ -25,7 +30,7 @@ footer {
 }
 #navButton, .dropdown {
  width: 100%;
- color:  #230007;
+ color:  var(--title);
  background-color: #7D7461;
  position: relative;
  z-index: 1;

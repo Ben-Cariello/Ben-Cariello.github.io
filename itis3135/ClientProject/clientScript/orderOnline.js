@@ -75,17 +75,8 @@ amountInput.forEach(function(checkInput) {
 });
 
 //Makes the reset button clear everything
-resetButton.addEventListener('click', function() {
-    //loop through every checkbox
-    checkboxes.forEach(function(checkbox) {
-        var numberInput = document.getElementById(checkbox.id + 'Amount');
-        var labelAmount = document.getElementById(checkbox.id + 'Label');
-        // Toggle visibility of the number input based on checkbox's checked state
-        numberInput.style.display ='none';
-        numberInput.required ='false';
-        labelAmount.style.display = 'none'
-    });
-    
+resetButton.addEventListener('click', function() {  
+    resetForm();
     document.getElementById('total').textContent = "Your total is: $0.00";
     document.getElementById('placedLabel').textContent = "";
 });
@@ -102,4 +93,19 @@ function placed() {
     //displaying text
     display.innerHTML = text;
 
+    //clearing form
+    resetForm();
+}
+
+
+function resetForm() {
+    document.getElementById("orderForm").reset();
+    checkboxes.forEach(function(checkbox) {
+        var numberInput = document.getElementById(checkbox.id + 'Amount');
+        var labelAmount = document.getElementById(checkbox.id + 'Label');
+        // Toggle visibility of the number input based on checkbox's checked state
+        numberInput.style.display ='none';
+        numberInput.required ='false';
+        labelAmount.style.display = 'none'
+    });
 }

@@ -8,28 +8,7 @@
 </head>
 <body>
    <header>
-    <div class="navDiv" id ="navDiv">
-    <button id ="navButton">⇒Cast Iron Waffles</button>
-    <div class="dropdown" id = "dropdownDiv">
-        <nav>
-            <div class="dropdown">
-                <a class="dropdown" href="index.html">Home</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="about.html">About Us</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="menu.html">Menu & Hours</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="order.html">Order Online</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="apply.html">Apply Now!</a>
-            </div>
-        </nav>
-    </div>
-    </div>
+    <div data-include="components/header.html"></div>
    </header>
    <main>
     <h1>Apply Now!</h1>
@@ -37,26 +16,26 @@
     <fieldset class = "formSection">
         <legend>Required Information</legend>
             <div class = "basicInfo">
-                <label>Name:</label>
+                <label for="name">Name:</label>
                 <input id ="name" required type ="text" placeholder ="First and Last Name">
             </div>
             <div class = "basicInfo">
-                <label>Email:</label>
+                <label for = "email">Email:</label>
                 <input required id="email" type = "email" placeholder = "Enter your email">
             </div>
             <div class = "basicInfo">
-                <label>Phone Number:</label>
+                <label for = "number">Phone Number:</label>
                 <input required id ="number" type ="tel" placeholder = "(999) 999-9999" >
             </div>
             <div class = "basicInfo">
-                <label>Date of Birth:</label>
+                <label for = "dob">Date of Birth:</label>
                 <input required id ="dob" type ="date">
             </div>
     </fieldset>
     <fieldset class = "formSection">
         <legend>Optional Information</legend>
         <div class = "optInfo">
-            <label>Pronouns:</label>
+            <label for = "pronoun">Pronouns:</label>
             <select id = "pronoun">
                 <option id = "unselected">(Select One)</option>
                 <option id = "HH">He/Him</option>
@@ -66,25 +45,24 @@
             </select>
         </div>
         <div class = "optInfo">
-            <label>Additional Comments:</label>
+            <label for = "comments">Additional Comments:</label>
             <textarea placeholder="Enter Comments" id = "comments"></textarea> 
         </div>
     </fieldset>
     <fieldset class = "formSection">
         <legend>Resume Upload</legend>
         <div>
-            <label>Resume:</label>
+            <label for = "file">Resume:</label>
             <input required type="file" accept=".pdf">
         </div>
     </fieldset>
-    <button class = "formbuttons"id="submitButton" type="submit">Submit</button>
+    <button class = "formbuttons" id ="submitButton" type="submit">Submit</button>
     <button class = "formbuttons" id ="clearButton" type="reset" >Clear</button>
     </form>
    </main>
    <footer>
     <div data-include="components/footer.html"></div>
 </footer>
-<script src = "clientScript/navBar.js"></script>
 <script src = "clientScript/include.js"></script>
 </body>
 </html>

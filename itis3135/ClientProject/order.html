@@ -8,29 +8,7 @@
 </head>
 <body>
    <header>
-    <div class="navDiv" id ="navDiv">
-    <button id ="navButton">⇒Cast Iron Waffles</button>
-    <div class="dropdown" id = "dropdownDiv">
-        <nav>
-            <div class="dropdown">
-                <a class="dropdown" href="index.html">Home</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="about.html">About Us</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="menu.html">Menu & Hours</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="order.html">Order Online</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="apply.html">Apply Now!</a>
-            </div>
-        </nav>
-        </nav>
-    </div>
-    </div>
+    <div data-include="components/header.html"></div>
    </header>
    <main>
     <h1>Online Order</h1>
@@ -38,50 +16,50 @@
     <div>
         <h2>Required Information</h2>
         <div class = "orderDiv">
-            <label>Name:</label>
-            <input type="text" required placeholder = "First and Last Name">
+            <label for = "nameorder">Name:</label>
+            <input type="text" required placeholder = "First and Last Name" id = "nameorder">
             <br>
-            <label>Phone Number:</label>
-            <input type="tel" required placeholder="(999) 999-9999">
+            <label for = "phonenumber">Phone Number:</label>
+            <input type="tel" required placeholder="(999) 999-9999" id = "phonenumber">
         </div>
         <h2>Coffee</h2>
         <div class = "orderDiv">
-            <label>Fresh Coffee</label>
+            <label for = "fresh">Fresh Coffee</label>
             <input type = "checkbox" id = "fresh" class = "orderCheck">
-            <label id="freshLabel" class = "amountLabel">Amount:</label>
+            <label id="freshLabel" class = "amountLabel" for = "freshAmount">Amount:</label>
             <input value = "1" placeholder = "1-10" type = "number" max = "10" min = "1" class = "amount" id = "freshAmount">
         </div>
         <div class = "orderDiv">
-            <label>Premium Latte</label>
+            <label for = "latte">Premium Latte</label>
             <input type = "checkbox" id = "latte" class = "orderCheck">
-            <label id="latteLabel"  class = "amountLabel">Amount:</label>
+            <label id="latteLabel"  class = "amountLabel" for = "latteAmount">Amount:</label>
             <input value = "1"  placeholder = "1-10" type = "number" min = "1" max = "10" class = "amount" id="latteAmount">
         </div>
         <div class = "orderDiv">
-            <label>Blended Coffee</label>
+            <label for = "blended">Blended Coffee</label>
             <input type = "checkbox" id = "blended" class = "orderCheck">
-            <label id="blendedLabel"  class = "amountLabel">Amount:</label>
+            <label id="blendedLabel"  class = "amountLabel" for = "blendedAmount">Amount:</label>
             <input value = "1" placeholder = "1-10" type = "number" max = "10" min = "1" class = "amount" id="blendedAmount">
         </div>
     </div>
     <div>
         <h2>Waffles</h2>
         <div class = "orderDiv">
-            <label>Deluxe Waffle</label>
+            <label for = "deluxe">Deluxe Waffle</label>
             <input type = "checkbox" id = "deluxe" class = "orderCheck">
-            <label id="deluxeLabel"  class = "amountLabel">Amount:</label>
+            <label id="deluxeLabel"  class = "amountLabel" for = "deluxeAmount">Amount:</label>
             <input value = "1" placeholder = "1-10" type = "number" max = "10" min = "1" class = "amount" id="deluxeAmount">
         </div>
         <div class = "orderDiv">
-            <label>Blueberry Cream</label>
+            <label for = "blueberry">Blueberry Cream</label>
             <input type = "checkbox" id = "blueberry" class = "orderCheck">
-            <label id="blueberryLabel"  class = "amountLabel">Amount:</label>
+            <label for = "blueberryAmount" id="blueberryLabel"  class = "amountLabel">Amount:</label>
             <input value = "1" placeholder = "1-10" type = "number" max = "10" min = "1" class = "amount" id="blueberryAmount">
         </div>
         <div class = "orderDiv">
-            <label>Apple Pie</label>
+            <label for = "apple">Apple Pie</label>
             <input type = "checkbox" id = "apple" class = "orderCheck">
-            <label id="appleLabel"  class = "amountLabel">Amount:</label>
+            <label id="appleLabel" for = "appleAmount"  class = "amountLabel">Amount:</label>
             <input value = "1" placeholder = "1-10" type = "number" max = "10" min = "1" class = "amount" id="appleAmount">
             
         </div>
@@ -96,7 +74,6 @@
     <div data-include="components/footer.html"></div>
    </footer>
    <script src = "clientScript/include.js"></script>
-   <script src = "clientScript/navBar.js"></script>
    <script src = "clientScript/orderOnline.js"></script>
 </body>
 </html>

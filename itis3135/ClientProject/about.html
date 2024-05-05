@@ -8,28 +8,7 @@
 </head>
 <body>
    <header>
-    <div class="navDiv" id ="navDiv">
-    <button id ="navButton">⇒Cast Iron Waffles</button>
-    <div class="dropdown" id = "dropdownDiv">
-        <nav>
-            <div class="dropdown">
-                <a class="dropdown" href="index.html">Home</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="about.html">About Us</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="menu.html">Menu & Hours</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="order.html">Order Online</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="apply.html">Apply Now!</a>
-            </div>
-        </nav>
-    </div>
-    </div>
+    <div data-include="components/header.html"></div>
    </header>
    <main>
     <h1>About us</h1>
@@ -45,16 +24,15 @@
     </blockquote>
     </div>
     <p><b>Stop by the shop and enjoy an inviting atmosphere, friendly service & the best Liege Waffles, & Premium Coffee in Charlotte!</b></p>
-    <div id = "location"></div>
+    <div id = "location">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13068.888551211334!2d-80.8406498!3d35.0261723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885682c30a35e33d%3A0x319e3a9cee78643!2sCast%20Iron%20Waffles!5e0!3m2!1sen!2sus!4v1713137790579!5m2!1sen!2sus" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <p>9604 Longstone Lane, Charlotte, North Carolina 28277, United States</p>
     <p>704-469-1971</p>
-</div>
+    </div>
 </main>
    <footer>
     <div data-include="components/footer.html"></div>
 </footer>
-<script src = "clientScript/navBar.js"></script>
 <script src = "clientScript/include.js"></script>
 </body>
 </html>

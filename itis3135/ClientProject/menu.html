@@ -8,28 +8,7 @@
 </head>
 <body>
    <header>
-    <div class="navDiv" id ="navDiv">
-    <button id ="navButton">⇒Cast Iron Waffles</button>
-    <div class="dropdown" id = "dropdownDiv">
-        <nav>
-            <div class="dropdown">
-                <a class="dropdown" href="index.html">Home</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="about.html">About Us</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="menu.html">Menu & Hours</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="order.html">Order Online</a>
-            </div>
-            <div class="dropdown">
-                <a class = "dropdown" href="apply.html">Apply Now!</a>
-            </div>
-        </nav>
-    </div>
-    </div>
+    <div data-include="components/header.html"></div>
    </header>
    <main>
     <h1>Menu</h1>
@@ -42,7 +21,7 @@
                 <figcaption class = "menuName">Fresh Coffee $2.89</figcaption>
             </figure>
             <figure class = "menuItem">
-                <img class = "menuPhoto" src = "./clientImages/latte.png"alt = "Premium Latte">
+                <img class = "menuPhoto" src = "./clientImages/latte.png" alt = "Premium Latte">
                 <figcaption class = "menuName">Premium Latte $4.75</figcaption>
             </figure>
             <figure class = "menuItem">
@@ -84,7 +63,6 @@
    <footer>
     <div data-include="components/footer.html"></div>
    </footer>
-   <script src = "clientScript/navBar.js"></script>
    <script src = "clientScript/include.js"></script>
 </body>
 </html>
